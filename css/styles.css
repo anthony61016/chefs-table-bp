@@ -1,8 +1,41 @@
 /* Global Styles */
+body {
+  font-family: 'PT Mono', monospace;
+  position: relative;
+
+}
+
 
 .text-white {
   color: #ffffff;
 }
+
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Playfair Display', serif;
+
+}
+
+/* navbar section */
+.navbar-default {
+  background: #000000;
+}
+
+.navbar {
+  border: 0;
+}
+
+
+.navbar-brand h1 {
+  font-family: 'Permanent Marker', cursive;
+  margin: 0;
+  font-size: 24px;
+}
+
+.navbar-brand {
+  padding: 10px;
+}
+
 
 .home-section {
   background-image: url('../img/hero.jpg');
@@ -14,6 +47,19 @@
   display: flex;
   align-items: center;
 }
+
+/* menu-section */
+.menu-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.tab-pane {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+
 
 /* reservation section */
 .reservation-section {

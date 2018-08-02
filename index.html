@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar-example" id='main-nav'>
     <nav class="navbar navbar-default" id="main-nav">
         <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
+       <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
@@ -33,18 +33,16 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-
-                    <li><a href="#home-section">Home</a></li>
-                    <li><a href="#menu-section">Explore the Menu</a></li>
-                    <li><a href="#reservation-section">Make a Reservation</a></li>
-                   
+                  <li><a href="#home-section">Home</a></li>
+                  <li><a href="#menu-section">Explore the Menu</a></li>
+                  <li><a href="#reservation-section">Make a Reservation</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
     </nav><!-- /.navbar -->
 
     <!-- body site code here -->
-    <section class="home-section text-white">
+    <section id="home-section" class="home-section text-white">
       <div class="container text-center">
         <div class="row">
           <div class="col-sm-12">
@@ -55,21 +53,101 @@
       </div>
     </section>
 
-    <section>
+    <section id="menu-section" class="menu-section">
+      <div class="container">
+        <div class="row">
+          <div>
+            <h2>Explore our menu</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis vero autem, aliquid sit sunt, eveniet sequi magnam eius accusantium culpa temporibus reprehenderit illum similique ipsum perspiciatis id, voluptates quae mollitia!</p>
+          </div>
+          <div class="col-md-10 col-md-offset">
+            <div>
+                          <!-- Nav tabs -->
+               <ul class="nav nav-tabs" role="tablist">
+                 <li role="presentation" class="active"><a href="#menu-appetizers" aria-controls="home" role="tab" data-toggle="tab">Appetizers</a></li>
+                 <li role="presentation"><a href="#menu-entrees" aria-controls="profile" role="tab" data-toggle="tab">Entrees</a></li>
+                 <li role="presentation"><a href="#menu-desserts" aria-controls="messages" role="tab" data-toggle="tab">Desserts</a></li>
+                 <li role="presentation"><a href="#menu-cocktails" aria-controls="settings" role="tab" data-toggle="tab">Cocktails</a></li>
+               </ul>
+
+                       <!-- Tab panes -->
+               <div class="tab-content">
+                 <div role="tabpanel" class="tab-pane active active fade in" id="menu-appetizers">Appetizers
+                   <div class="row">
+                     <div class="col-md-6">
+                       left side appetizers
+                     </div>
+                     <div class="col-md-6">
+                       right side appetizers
+                     </div>
+                   </div>
+                 </div>
+                 <div role="tabpanel" class="tab-pane fade" id="menu-entrees">Entrees
+                   <div class="row">
+                     <div class="col-md-6">
+                       left side appetizers
+                     </div>
+                     <div class="col-md-6">
+                       right side appetizers
+                     </div>
+                   </div>
+                 </div>
+                 <div role="tabpanel" class="tab-pane fade" id="menu-desserts">Desserts
+                   <div class="row">
+                     <div class="col-md-6">
+                       left side appetizers
+                     </div>
+                     <div class="col-md-6">
+                       right side appetizers
+                     </div>
+                   </div>
+                 </div>
+                 <div role="tabpanel" class="tab-pane fade" id="menu-cocktails">Cocktails
+                   <div class="row">
+                     <div class="col-md-6">
+                       left side appetizers
+                     </div>
+                     <div class="col-md-6">
+                       right side appetizers
+                     </div>
+                   </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reservation-section" class="reservation-section">
       <div class="container text-center">
         <div class="row">
           <div class="col-sm-12">
             <h2>Make a reservation</h2>
-            <form action="">
-              First name:<br>
-              <input type="text"><br>
-              Last name:<br>
-              <input type="text"><br>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+            <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">First Name:</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="First Name">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Last Name:</label>
+      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+    </div>
+    <!-- <div class="form-group">
+      <label for="exampleInputFile">File input</label>
+      <input type="file" id="exampleInputFile">
+      <p class="help-block">Example block-level help text here.</p>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox"> Check me out
+      </label>
+    </div> -->
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
             <p>
-                     <i class="fab fa-facebook-square"></i> <i class="fab fa-twitter"></i> <i class="fab fa-instagram"></i>
-                   </p>
+              <i class="fab fa-facebook-square"></i> <i class="fab fa-twitter"></i> <i class="fab fa-instagram"></i>
+           </p>
           </div>
         </div>
       </div>
